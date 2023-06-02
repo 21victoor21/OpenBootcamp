@@ -7,7 +7,7 @@ public class Main {
     public static void main(String[] args) {
         //1 forma con clase sin parametros
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
-        CalculatorService calc = (CalculatorService) context.getBean("calculatorServices");
+        CalculatorService calc = (CalculatorService) context.getBean("calculatorService");
         String texto = calc.Mensaje();
         System.out.println(texto);
         //2 forma con clases con parametros - cargas un bean dentro de otro bean
